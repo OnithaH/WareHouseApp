@@ -40,7 +40,6 @@ namespace WareHouseApp
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.button9 = new System.Windows.Forms.Button();
-            this.mainDash1 = new WareHouseApp.MainDash();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -151,19 +150,11 @@ namespace WareHouseApp
             this.button9.Text = "Language";
             this.button9.UseVisualStyleBackColor = true;
             // 
-            // mainDash1
-            // 
-            this.mainDash1.Location = new System.Drawing.Point(277, 79);
-            this.mainDash1.Name = "mainDash1";
-            this.mainDash1.Size = new System.Drawing.Size(806, 510);
-            this.mainDash1.TabIndex = 2;
-            // 
             // DashBoard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1095, 595);
-            this.Controls.Add(this.mainDash1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -188,6 +179,5 @@ namespace WareHouseApp
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.Button button8;
         private System.Windows.Forms.Button button9;
-        private MainDash mainDash1;
     }
 }
