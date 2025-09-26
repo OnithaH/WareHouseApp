@@ -30,16 +30,16 @@ namespace WareHouseApp
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
+            this.button3 = new System.Windows.Forms.Button();
+            this.button2 = new System.Windows.Forms.Button();
+            this.button1 = new System.Windows.Forms.Button();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
+            this.button8 = new System.Windows.Forms.Button();
+            this.button7 = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.SuspendLayout();
@@ -58,6 +58,60 @@ namespace WareHouseApp
             this.panel1.Size = new System.Drawing.Size(272, 596);
             this.panel1.TabIndex = 0;
             // 
+            // button5
+            // 
+            this.button5.Location = new System.Drawing.Point(27, 365);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(220, 40);
+            this.button5.TabIndex = 5;
+            this.button5.Text = "button5";
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(27, 299);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(220, 40);
+            this.button4.TabIndex = 3;
+            this.button4.Text = "button4";
+            this.button4.UseVisualStyleBackColor = true;
+            // 
+            // button6
+            // 
+            this.button6.Location = new System.Drawing.Point(27, 430);
+            this.button6.Name = "button6";
+            this.button6.Size = new System.Drawing.Size(220, 40);
+            this.button6.TabIndex = 4;
+            this.button6.Text = "button6";
+            this.button6.UseVisualStyleBackColor = true;
+            // 
+            // button3
+            // 
+            this.button3.Location = new System.Drawing.Point(27, 237);
+            this.button3.Name = "button3";
+            this.button3.Size = new System.Drawing.Size(220, 40);
+            this.button3.TabIndex = 2;
+            this.button3.Text = "button3";
+            this.button3.UseVisualStyleBackColor = true;
+            // 
+            // button2
+            // 
+            this.button2.Location = new System.Drawing.Point(27, 175);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(220, 40);
+            this.button2.TabIndex = 1;
+            this.button2.Text = "button2";
+            this.button2.UseVisualStyleBackColor = true;
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(27, 114);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(220, 40);
+            this.button1.TabIndex = 0;
+            this.button1.Text = "button1";
+            this.button1.UseVisualStyleBackColor = true;
+            // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.Silver;
@@ -69,68 +123,14 @@ namespace WareHouseApp
             this.panel2.Size = new System.Drawing.Size(823, 77);
             this.panel2.TabIndex = 1;
             // 
-            // button1
+            // button9
             // 
-            this.button1.Location = new System.Drawing.Point(27, 114);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(220, 40);
-            this.button1.TabIndex = 0;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(27, 175);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(220, 40);
-            this.button2.TabIndex = 1;
-            this.button2.Text = "button2";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // button3
-            // 
-            this.button3.Location = new System.Drawing.Point(27, 237);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(220, 40);
-            this.button3.TabIndex = 2;
-            this.button3.Text = "button3";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button4
-            // 
-            this.button4.Location = new System.Drawing.Point(27, 299);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(220, 40);
-            this.button4.TabIndex = 3;
-            this.button4.Text = "button4";
-            this.button4.UseVisualStyleBackColor = true;
-            // 
-            // button5
-            // 
-            this.button5.Location = new System.Drawing.Point(27, 365);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(220, 40);
-            this.button5.TabIndex = 5;
-            this.button5.Text = "button5";
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // button6
-            // 
-            this.button6.Location = new System.Drawing.Point(27, 430);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(220, 40);
-            this.button6.TabIndex = 4;
-            this.button6.Text = "button6";
-            this.button6.UseVisualStyleBackColor = true;
-            // 
-            // button7
-            // 
-            this.button7.Location = new System.Drawing.Point(746, 13);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(65, 61);
-            this.button7.TabIndex = 6;
-            this.button7.Text = "Profile";
-            this.button7.UseVisualStyleBackColor = true;
+            this.button9.Location = new System.Drawing.Point(20, 13);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(196, 61);
+            this.button9.TabIndex = 8;
+            this.button9.Text = "Language";
+            this.button9.UseVisualStyleBackColor = true;
             // 
             // button8
             // 
@@ -141,14 +141,14 @@ namespace WareHouseApp
             this.button8.Text = "Settings";
             this.button8.UseVisualStyleBackColor = true;
             // 
-            // button9
+            // button7
             // 
-            this.button9.Location = new System.Drawing.Point(20, 13);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(196, 61);
-            this.button9.TabIndex = 8;
-            this.button9.Text = "Language";
-            this.button9.UseVisualStyleBackColor = true;
+            this.button7.Location = new System.Drawing.Point(746, 13);
+            this.button7.Name = "button7";
+            this.button7.Size = new System.Drawing.Size(65, 61);
+            this.button7.TabIndex = 6;
+            this.button7.Text = "Profile";
+            this.button7.UseVisualStyleBackColor = true;
             // 
             // DashBoard
             // 
@@ -160,6 +160,7 @@ namespace WareHouseApp
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "DashBoard";
             this.Text = "DashBoard";
+            this.Load += new System.EventHandler(this.DashBoard_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);

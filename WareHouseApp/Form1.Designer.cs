@@ -84,7 +84,7 @@ namespace WareHouseApp
             // butLogin
             // 
             this.butLogin.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(155)))), ((int)(((byte)(236)))), ((int)(((byte)(0)))));
-            this.butLogin.Location = new System.Drawing.Point(370, 393);
+            this.butLogin.Location = new System.Drawing.Point(303, 393);
             this.butLogin.Name = "butLogin";
             this.butLogin.Size = new System.Drawing.Size(166, 48);
             this.butLogin.TabIndex = 4;

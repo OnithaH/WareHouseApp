@@ -16,6 +16,7 @@ namespace WareHouseApp
     {
         Admin admin = new Admin();
         LoginPage loginPage = new LoginPage();
+
         public Form1()
         {
             InitializeComponent();
@@ -23,12 +24,10 @@ namespace WareHouseApp
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
-
         }
 
         private void label1_Click(object sender, EventArgs e)
         {
-
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -38,26 +37,40 @@ namespace WareHouseApp
 
         private void butLogin_Click(object sender, EventArgs e)
         {
-            string UserNameTxt = txtName.Text;
-            string PassTxt = txtPassword.Text;
+            string UserNameTxt = txtName.Text.Trim();
+            string PassTxt = txtPassword.Text.Trim();
+
+            // Basic validation
+            if (string.IsNullOrEmpty(UserNameTxt) || string.IsNullOrEmpty(PassTxt))
+            {
+                MessageBox.Show("Please enter both username and password.", "Validation Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             try
             {
-                admin.Login(UserNameTxt, PassTxt);
-                Console.WriteLine("Logged IN");
+                bool loginSuccess = admin.Login(UserNameTxt, PassTxt);
 
+                if (loginSuccess)
+                {
+                    // Open dashboard and hide login form
+                    DashBoard dashboard = new DashBoard();
+                    dashboard.Show();
+                    this.Hide();
+                }
+                else
+                {
+                    MessageBox.Show(loginPage.LoginErrorTitleEn, loginPage.LoginErrorMessageEn, MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             catch (Exception ex)
             {
-
-                Console.WriteLine(ex);
-                MessageBox.Show(loginPage.LoginErrorTitleEn, loginPage.LoginErrorMessageEn, MessageBoxButtons.RetryCancel);
+                MessageBox.Show("Login Error", "An error occurred during login: " + ex.Message, MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             finally
             {
-                txtPassword.Text="";
+                txtPassword.Text = ""; // Clear password field
             }
-
-            
         }
     }
 }

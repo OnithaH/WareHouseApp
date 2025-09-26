@@ -16,7 +16,7 @@ namespace WareHouseApp
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new DashBoard());
+            Application.Run(new Form1());
         }
     }
 }

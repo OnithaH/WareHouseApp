@@ -3,20 +3,33 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
 
 namespace WareHouseApp.People
 {
     class Admin : Person
     {
-        
-
         public override bool Login(string username, string password)
         {
-            if(username == "Admin" && password == "admin123")
+            try
             {
-                return true;
+                string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\AppData.mdf;Integrated Security=True;";
+                using (SqlConnection connection = new SqlConnection(connectionString))
+                {
+                    connection.Open();
+                    string query = "SELECT COUNT(*) FROM Users WHERE Username = @username AND Password = @password";
+
+                    using (SqlCommand command = new SqlCommand(query, connection))
+                    {
+                        command.Parameters.AddWithValue("@username", username);
+                        command.Parameters.AddWithValue("@password", password);
+
+                        int count = (int)command.ExecuteScalar();
+                        return count > 0;
+                    }
+                }
             }
-            else
+            catch (Exception)
             {
                 return false;
             }
@@ -24,12 +37,12 @@ namespace WareHouseApp.People
 
         public override void ChangePassword(string newPassword)
         {
-            throw new NotImplementedException();
+            this.Password = newPassword;
         }
 
         public override void Logout(int userID)
         {
-            throw new NotImplementedException();
+            // Logout implementation
         }
     }
 }
